@@ -1,0 +1,60 @@
+{
+  "name": "stellar-payment-button",
+  "version": "0.1.0",
+  "description": "React Stellar payment button with SEP-0007 URI, QR modal, and wallet deep links (Scopuly-compatible)",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/stellar-payment-button.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "npm run build -- --watch",
+    "demo": "npm run build && npm --prefix examples/demo install && npm --prefix examples/demo run dev",
+    "demo:build": "npm run build && npm --prefix examples/demo install && npm --prefix examples/demo run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@stellar/stellar-base": "^15.0.0",
+    "react-qr-code": "^2.0.18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "keywords": [
+    "stellar",
+    "scopuly",
+    "payment",
+    "sep-0007",
+    "react",
+    "xlm",
+    "web+stellar"
+  ]
+}

@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+  background: radial-gradient(circle at top, #1e1b4b 0%, #020617 55%);
+  color: #e2e8f0;
+}
+
+.app {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.app h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+
+.app p.lead {
+  margin: 0 0 2rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.6);
+  margin-bottom: 1.25rem;
+}
+
+.section h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #818cf8;
+  margin: 0 0 1rem;
+}
+
+.mono {
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+  word-break: break-all;
+  color: #cbd5e1;
+  margin-top: 1rem;
+}
